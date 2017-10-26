@@ -32,7 +32,7 @@ class PlaceController extends Controller
             Place::with('author', 'users')
                 ->filter()
                 ->orderBy('visits_count', 'desc')
-                ->orderBy('name')->paginate(2)
+                ->orderBy('name')->paginate(10)
         );
     }
 
