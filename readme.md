@@ -6,12 +6,12 @@ It's educational project that allows everyone to share information about world i
 - *Everyone* can create interesting places.
 - *Everyone* can find places stored in database.
 - **Available filters:**
-        - *address with search radius*
-        - *country*
-        - *name*
-        - *author*
-        - *favorite (only for registered users)*
-        - *popular*
+	- *address with search radius*
+    - *country*
+    - *name*
+    - *author*
+    - *favorite (only for registered users)*
+    - *popular*
 
 **Admin section**
 
@@ -23,6 +23,6 @@ It's educational project that allows everyone to share information about world i
 
 - **Guest**. There are no special requirements but some functionality (favorite list, editing mode) are not available.
 - **Own account**. You should register new user and confirm your email address. You will have access to all site features.
-- **Demo account** (username - *demo@example.com*, password - *secret*). You will have access to all site features without necessary of registration.
+- **Demo account** (username - *demo<span></span>@example.com*, password - *secret*). You will have access to all site features without necessary of registration.
 
 Demo of the project - [Sightseeing](https://sightseeing-doctravik.herokuapp.com).
