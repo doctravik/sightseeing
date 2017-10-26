@@ -1,0 +1,60 @@
+.filters {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.filter {
+    margin-top: .5em;
+    padding: 1em 0 .5em 0;
+    border-top: 1px solid #dedede;
+}
+
+.filter__address {
+    @media (min-width: 769px) {
+        max-width: 650px
+    }
+}
+
+.filter__distance {
+    @media (min-width: 435px) {
+        .control {
+            max-width: 165px
+        }
+    }
+}
+
+.place-filters {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+        flex-direction: row;
+    }
+}
+
+.place-filter {
+    flex: 1;
+    padding-bottom: .75rem;
+
+    & + & {
+        padding-left: 0;
+
+        @media (min-width: 769px) {
+            padding-left: .5rem;
+        }
+    }
+}
+
+.filter__tags {
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    @media (min-width: 769px) {
+        margin-top: 0;
+    }
+}
+
+.tag.is-grey {
+    background-color: #e4e4e4;
+    color: white;
+}

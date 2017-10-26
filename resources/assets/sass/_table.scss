@@ -1,0 +1,20 @@
+.table-cs {
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+
+    thead {
+        background-color: whitesmoke;
+    }
+
+    th {
+        font-weight: 500;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    td {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

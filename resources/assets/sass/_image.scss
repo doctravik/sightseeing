@@ -1,0 +1,19 @@
+.image-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+    img {
+        max-height: 100%;
+    }
+}
+
+.image {
+    &.max-width-128 {
+        max-width: 128px;
+    }
+    &.width-256 {
+        max-width: 256px;
+    }
+}
