@@ -127,7 +127,7 @@
              */
             clusterifyMarkers() {
                 this.markerCluster = new MarkerClusterer(this.map, this.markers, {
-                    imagePath: '/storage/app/m'
+                    imagePath: (this.$root.storage + 'app/m')
                 });
             },
 

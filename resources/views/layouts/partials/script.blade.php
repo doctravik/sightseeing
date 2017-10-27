@@ -1,7 +1,7 @@
 <script>
     window.app = {!! json_encode([
         'user' => auth()->check() ? new \App\Http\Resources\User(auth()->user()) : null,
-        'image_template' => Storage::url('app/template.svg')
+        'storage' => substr(Storage::url('/'), 0, -1)
     ]) !!};
 </script>
 

@@ -3,7 +3,7 @@
         <figure class="media-left is-visible-tablet margin-right-2" ref="image">
             <p class="image width-256">
                 <img v-if="place.image" :src="place.image" alt="Place image">
-                <img v-else :src="$root.image_template" alt="Image template">
+                <img v-else :src="template" alt="Image template">
             </p>
         </figure>
         <div class="media-content">
@@ -80,6 +80,10 @@
             isAuthorized() {
                 return this.authorize('isAdmin') || this.authorize('isAuthor', this.place);
             },
+
+            template() {
+                return this.$root.storage + 'app/template.svg';
+            }
         },
 
         data() {
