@@ -38,7 +38,7 @@
                 <ul>
                     <li><b>Guest</b>. There are no special requirements but some functionality (favorite list, editing mode) are not available.</li>
                     <li><b>Own account</b>. You should register new user and confirm your email address. You will have access to all site features.</li>
-                    <li><b>Demo account</b> (username - <em>demo@example.com</em>, password - <em>secret</em>). You will have access to all site features without necessary of registration.</li>
+                    <li><b>Demo account</b>. You will have access to all site features without necessary of registration.</li>
                 </ul>
             </div>
         </div>

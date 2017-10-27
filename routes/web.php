@@ -3,6 +3,7 @@
 Route::get('/', 'PlaceController@index');
 Route::get('/home', 'PlaceController@index')->name('home');
 Route::get('/about', 'AboutController@index')->name('about');
+Route::post('/demo', 'DemoController@login')->name('demo');
 
 Route::get('/places', 'PlaceController@index');
 Route::get('/places/create', 'PlaceController@create');

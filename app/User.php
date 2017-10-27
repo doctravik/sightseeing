@@ -93,4 +93,42 @@ class User extends Authenticatable
     {
         return $this->hasMany(Place::class);
     }
+
+    /**
+     * Associate places with user.
+     *
+     * @param array $places
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function addPlaces(array $places)
+    {
+        return $this->places()->createMany($places);
+    }
+
+    /**
+     * Delete places of the user.
+     *
+     * @return void
+     */
+    public function deletePlaces()
+    {
+        // Delete place photo.
+        $this->places->map(function ($place) {
+            $place->deletePhoto();
+        });
+
+        $this->places()->delete();
+    }
+
+    /**
+     * Override delete method of the Eloquent Model.
+     *
+     * @return void
+     */
+    public function delete()
+    {
+        $this->deletePlaces();
+
+        parent::delete();
+    }
 }

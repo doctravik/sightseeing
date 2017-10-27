@@ -66,7 +66,7 @@ class Photo
      */
     public function save()
     {
-        Storage::put($path = $this->getPath(), $this->image->stream());
+        Storage::put($path = $this->getPath(), (string) $this->image->encode());
 
         return $path;
     }

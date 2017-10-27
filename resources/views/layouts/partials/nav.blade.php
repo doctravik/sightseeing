@@ -2,7 +2,7 @@
     <div class="container">
     <div class="navbar-brand">
         <a class="navbar-item logo" href="/">
-            <img src="{{ Storage::url('/app/Logo.svg') }}" alt="Logo" width="60">
+            <img src="{{ Storage::url('app/Logo.svg') }}" alt="Logo" width="60">
             <b>{{ config('app.name') }}</b>
         </a>
 
@@ -39,6 +39,13 @@
             @guest
                 <a class="navbar-item" href="{{ url('/register') }}">Register</a>
                 <a class="navbar-item" href="{{ url('/login') }}">Login</a>
+                <div class="navbar-item">
+                    <form action="{{ route('demo') }}" method="POST" id="demo-form">
+                            {{ csrf_field() }}
+                        <a class="button is-link" onclick="event.preventDefault();
+                                document.getElementById('demo-form').submit()">Demo</a>
+                    </form>
+                </div>
             @endguest
 
             @auth
